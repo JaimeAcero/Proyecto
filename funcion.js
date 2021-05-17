@@ -4,6 +4,7 @@ document.getElementById("Entrar").hidden = true;
 document.getElementById("Salir").hidden = false;
 }
 //Funciona?
+//si funciona
 function cambio2(){
 document.getElementById("userpic").src= "https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg";
 document.getElementById("Entrar").hidden = false;
