@@ -3,7 +3,7 @@ document.getElementById("userpic").src= "https://www.ecestaticos.com/image/clipp
 document.getElementById("Entrar").hidden = true;
 document.getElementById("Salir").hidden = false;
 }
-
+//Funciona?
 function cambio2(){
 document.getElementById("userpic").src= "https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg";
 document.getElementById("Entrar").hidden = false;
