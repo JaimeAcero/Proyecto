@@ -2,13 +2,18 @@
 <html>
      
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <style type="text/css">@-ms-viewport{width:auto!important;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="glider.css" />
     <script src="glider.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <script>
       window.addEventListener('load',function(){
         document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
@@ -88,7 +93,7 @@
         }
         html, body {
             width: 100%;
-            overflow: hidden;
+            overflow: scroll;
         }
         .glider-contain {
             width: 100%;
@@ -102,14 +107,14 @@
 			margin-left:100px;
         }
         .glider-slide img {
-            width: 80%;
-            height: 90%;
+            width: 90%;
+            height: 100%;
         }
     </style>
   </head>
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-  <img src="logo_04.png" alt="Logo" style="width:100px;">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+   <img src="logo_04.png" alt="Logo" style="width:100px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -118,61 +123,319 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#Tipos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tipos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Series</a>
-          <a class="dropdown-item" href="#">Peliculas</a>
-          <a class="dropdown-item" href="#">Cortometrajes</a>
+          <a class="dropdown-item" href="series.html">Series</a>
+          <a class="dropdown-item" href="peliculas.html">Peliculas</a>
+          <a class="dropdown-item" href="cortometrajes.html">Cortometrajes</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Listas</a>
+        <a class="nav-link" href="listas.html">Listas</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Que quieres ver?" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
     </form>
-     <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;"></div>
-                    <div><button href="#"id="Entrar" onclick="cambio()">Ingresar</button></div>
-                    <div><button href="#"id="Salir" onclick="cambio2()" hidden>Salir</button></div>
+    <a href="usuario.html"><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;" ></div></a>
+                    <div><a class="btn btn-outline-success my-2 my-sm-0" id="Entrar" onclick="cambio()" >Ingresar</a></div>
+                    <div><a class="btn btn-outline-success my-2 my-sm-0"  id="Salir" onclick="cambio2()" href="index.html" hidden >Salir</a></div>
     </div>
                                  
   </div>
 
 </nav>
 
-  <body>
+  <body  >
+ 
     <div class="glider-contain">
         <div class="glider"style="margin-top:20px">
-            <div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=2"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=3"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=5"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=6"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=7"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=8"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=9"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=10"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=11"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=12"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=13"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=14"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=15"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=16"></div>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
         </div>
         <button class="glider-prev">&laquo;</button>
         <button class="glider-next">&raquo;</button>
-        <div id="dots"></div>
-    </div>
+        <div id="dots"></div>    
+     </div>
     
-  </body>
+   <!-- partial:index.partial.html -->
   
+   
+    <div id="calendar-wrap" >
+     
+      <div id="header2" >
+        <h1 style="font-size: 30px;">Estrenos Mayo 2021 </h1>
+      </div>
+    
+     
+      <div id="calendar">
+        <ul class="weekdays">
+          <li>DO</li>
+          <li>LU</li>
+          <li>MA</li>
+          <li>MI</li>
+          <li>JU</li>
+          <li>VI</li>
+          <li>SA</li>
+        </ul>
+
+        <!-- Days from previous month -->
+
+        <ul class="days">
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+
+         
+
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+
+          <li class="day other-month">
+            <div class="date"></div>
+            <div class="event">
+              <div class="event-desc">
+                Selena:The Series(2T)
+              </div>
+            </div>     					
+          </li>
+
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+
+          <li class="day other-month">
+            <div class="date"></div>
+            <div class="event">
+              <div class="event-desc">
+                The boy from Medellín
+              </div>
+            </div>     					
+          </li>
+          <!-- Days in current month -->
+
+        
+          <li class="day">
+            <div class="date">1</div>    					
+          </li>
+
+        </ul>
+
+          <!-- Row #2 -->
+
+        <ul class="days">
+          
+          <li class="day">
+            <div class="date">2</div>    					
+          </li>
+
+          <li class="day">
+            <div class="date">3</div>    					
+          </li>
+          <li class="day">
+            <div class="date">4</div>    					
+          </li>
+
+           <li class="day">
+            <div class="date">5</div>
+            <div class="event">
+              <div class="event-desc">
+                El Baile de los 41
+              </div>
+            </div>     					
+          </li>
+
+          <li class="day">
+            <div class="date">6</div>    					
+          </li>
+
+          <li class="day">
+            <div class="date">7</div>    					
+          </li>
+          <li class="day">
+            <div class="date">8</div>    					
+          </li>
+        </ul>
+        
+
+          <!-- Row #3 -->
+
+        <ul class="days">
+          <li class="day">
+            <div class="date">9</div>    					
+          </li>
+          <li class="day">
+            <div class="date">10</div>    					
+          </li>
+          <li class="day">
+            <div class="date">11</div>    					
+          </li>
+         
+          <li class="day">
+            <div class="date">12</div><div class="event">
+              <div class="event-desc">
+                ¿Quién mató a Sara?(2T)
+              </div>
+            </div>     					
+          </li>
+          
+          <li class="day">
+            <div class="date">13</div><div class="event">
+              <div class="event-desc">
+                De viaje con los Derbez(2T)
+              </div>
+            </div>     					
+          </li>
+          
+          <li class="day">
+            <div class="date">14</div><div class="event">
+              <div class="event-desc">
+                Spiral: Saw
+              </div>
+              <div class="event-time">
+                P!nk: All I know so far
+               </div>
+            </div>     					
+          </li>
+
+
+          <li class="day">
+            <div class="date">15</div>    					
+          </li>
+
+
+        </ul>
+
+          <!-- Row #4 -->
+
+        <ul class="days">
+          <li class="day">
+            <div class="date">16</div>    					
+          </li>
+          <li class="day">
+            <div class="date">17</div>    					
+          </li>
+          <li class="day">
+            <div class="date">18</div>    					
+          </li>
+          <li class="day">
+            <div class="date">19</div>    					
+          </li>
+          <li class="day">
+            <div class="date">20</div>    					
+          </li>
+          <li class="day">
+            <div class="date">21</div>
+            <div class="event">
+              <div class="event-desc">
+                Cruella
+              </div>
+              <div class="event-time">
+               Despierta la furia
+              </div>
+            </div>     					
+          </li>
+          <li class="day">
+            <div class="date">22</div>    					
+          </li>
+        </ul>
+
+            <!-- Row #5 -->
+
+        <ul class="days">
+          <li class="day">
+            <div class="date">23</div>    					
+          </li>
+
+          <li class="day">
+            <div class="date">24</div>    					
+          </li>
+
+          <li class="day">
+            <div class="date">25</div>    					
+          </li>
+
+          <li class="day">
+            <div class="date">26</div>    					
+          </li>
+          <li class="day">
+            <div class="date">27</div>    					
+          </li>
+          <li class="day">
+            <div class="date">28</div>    					
+          </li>
+          <li class="day">
+            <div class="date">29</div>    					
+          </li>
+        </ul>
+
+        <!-- Row #6 -->
+
+        <ul class="days">
+          <li class="day">
+            <div class="date">30</div>    					
+          </li>
+          <li class="day ">
+            <div class="date">31</div>    					
+          </li>
+          <li class="day other-month"><!-- Next Month --> 
+            <div class="date"></div>    					
+          </li>
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+          <li class="day other-month">
+            <div class="date"></div>    					
+          </li>
+        </ul>
+      
+       
+   
+      </div><!-- /. calendar -->
+    
+    
+
+    </div><!-- /. wrap -->
+    <div id="da">
+    <video  controls >
+      <source src="videoplayback.mp4" type="video/mp4">
+    </video> 
+  </div>  
+  </body>
+
+  
+
   <script src="funcion.js"></script>
+  <script src="style.css"></script>
 </html>
