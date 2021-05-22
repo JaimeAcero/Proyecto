@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+     
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="glider.css" />
+    <script src="glider.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script>
+      window.addEventListener('load',function(){
+        document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
+            var glider = Glider(this);
+            console.log('Slide Visible %s', event.detail.slide)
+        });
+        document.querySelector('.glider').addEventListener('glider-slide-hidden', function(event){
+            console.log('Slide Hidden %s', event.detail.slide)
+        });
+        document.querySelector('.glider').addEventListener('glider-refresh', function(event){
+            console.log('Refresh')
+        });
+        document.querySelector('.glider').addEventListener('glider-loaded', function(event){
+            console.log('Loaded')
+        });
+
+        window._ = new Glider(document.querySelector('.glider'), {
+           
+            slidesToShow: 5, 
+            slidesToScroll:5,
+            draggable: true, 
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToScroll: 'auto',
+                        itemWidth: 300,
+                        slidesToShow: 'auto',
+                        exactWidth: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToScroll: 4,
+                        slidesToShow: 4,
+                        dots: false,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToScroll: 3,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToScroll: 2,
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false,
+                        scrollLock: true
+                    }
+                }
+            ]
+        });
+      });
+    </script>
+
+
+    <!--
+        Used to frame the glider on the page
+
+        Not necessary for Glider.js
+    -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+  font-family:'Montserrat',sans-serif;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 22%; /* IE10 */
+  flex: 22%;
+  max-width: 22%;
+  margin-left: 35px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+</style>
+
+<style type="text/css">
+        * {
+            box-sizing: border-box
+        }
+        html, body {
+            width: 100%;
+            overflow: scroll;
+        }
+        .glider-contain {
+            width: 100%;
+            max-width: 1200px;
+            max-height: 700px;
+            margin: 0 auto;
+        }
+        .glider-slide {
+            min-height: 100px;
+            min-width: 100px;
+			margin-left:100px;
+        }
+        .glider-slide img {
+            width: 90%;
+            height: 100%;
+        }
+    </style>
+
+
+  </head>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+   <img src="logo_04.png" alt="Logo" style="width:100px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#Tipos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tipos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="series.html">Series</a>
+          <a class="dropdown-item" href="peliculas.html">Peliculas</a>
+          <a class="dropdown-item" href="cortometrajes.html">Cortometrajes</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="listas.html">Listas</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Que quieres ver?" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+    <a href="usuario.html"><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;"></div></a>
+                    <div><button href="#"id="Entrar" onclick="cambio()">Ingresar</button></div>
+                    <div><button href="#"id="Salir" onclick="cambio2()" hidden>Salir</button></div>
+    </div>
+                                 
+  </div>
+
+</nav>
+
+  <body  >
+  <!-- Header -->
+
+<div class="header">
+  <h1>LISTA 4</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column" id="peli">
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+  </div>
+  <div class="column" id="peli">
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+  </div>  
+  <div class="column" id="peli">
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+  </div>
+  <div class="column" id="peli">
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+  </div>
+  
+</div>
+
+	
+
+	
+   <!-- partial:index.partial.html -->
+  
+   
+    
+  </body>
+
+  
+
+  <script src="funcion.js"></script>
+  <script src="style.css"></script>
+</html>
