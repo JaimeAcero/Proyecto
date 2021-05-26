@@ -1,0 +1,24 @@
+video{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 1%;
+    
+    }
+
+
+    @media only screen and (max-width: 400px) {
+        video {
+            width: 78%;
+            margin-top: 5%;
+            margin-left: 10%;
+       }
+   }
+    
+@media only screen and (min-width: 400px)  and (max-width: 600px) {
+    video {
+        width: 78%;
+        margin-top: 5%;
+        margin-left: 12%;
+   }
+}
+
