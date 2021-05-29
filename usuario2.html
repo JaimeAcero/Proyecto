@@ -31,7 +31,7 @@ body {
 
 .form{
   width: 340px;
-  height: 620px;
+  height: 420px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -113,7 +113,7 @@ p:before{
         }
         html, body {
             width: 100%;
-            overflow: scroll;
+            overflow: hidden;
         }
         
     
@@ -150,7 +150,7 @@ p:before{
     </ul>
   <div><a class="nav-link" href="usuario2.html">Registrarte</a></div>
 
-  <a href="usuario.html"><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg"id="userpic" style="width:25px;margin:10px;"></div>
+     <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" href="usuario.html" id="userpic" style="width:25px;margin:10px;"></div>
                     <div><a class="nav-link" href="#"id="Entrar" onclick="cambio()">Ingresar</a></div>
                     <div><a class="nav-link" href="#"id="Salir" onclick="cambio2()" hidden>Salir</a></div>
     </div>
@@ -164,12 +164,11 @@ p:before{
     <form class="form">
       <h2>Perfil</h2>
       <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic2" style="width:100px;margin-left:30%;">
-      <p type ="Nickname"><input type="text" placeholder="Escriba su nickname" required></p>
-      <p type ="Correo"><input type="email"></input></p>
-      <p type ="Contraseña (Minimo 6 carácteres)"><input type="password" pattern=".{6,}" placeholder="Escriba su contraseña " required></input></p>
-      <p type ="Contraseña"><input type="password" placeholder="Confirme su contraseña" required></input></p>
+      <p type ="Nickname"></p>
+      <p type ="Estatus"></p>
+      <p type ="Correo"></p>
 
-      <button id="buttonacep">Registrarme</button>
+      <button id="buttonacep">Lista favorita</button>
      
      </form> 
    
