@@ -128,6 +128,11 @@ body {
   vertical-align: middle;
   width: 100%;
 }
+#boton{
+  
+  margin-left: 4%;
+  
+  }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -199,7 +204,7 @@ body {
       <input class="form-control mr-sm-2" type="search" placeholder="Que quieres ver?" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
     </form>
-     <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;"></div>
+    <a href="usuario.html"><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;"></div></a>
                     <div><button href="#"id="Entrar" onclick="cambio()">Ingresar</button></div>
                     <div><button href="#"id="Salir" onclick="cambio2()" hidden>Salir</button></div>
     </div>
@@ -212,7 +217,7 @@ body {
   <!-- Header -->
 
 <div class="header">
-  <h1>LISTA 1</h1>
+  <h1>LISTA 1<a class="btn btn-outline-success my-2 my-sm-0" id="boton" href="list1.html">Lista Favorita</a></h1>
 </div>
 
 <!-- Photo Grid -->
