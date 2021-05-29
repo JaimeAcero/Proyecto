@@ -45,7 +45,7 @@ body {
 h2{
   margin:10px 0;
   padding-bottom: 10px;
-  width:180px;
+  width:280px;
   color: #78788c;
   border-bottom:3px solid #78788c
 }
@@ -115,6 +115,7 @@ p:before{
             width: 100%;
             overflow: scroll;
         }
+        
     
     </style>
 
@@ -165,22 +166,12 @@ p:before{
     <form class="form">
       <h2>Perfil</h2>
       <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic2" style="width:100px;margin-left:30%;">
-      <p type ="Nickname"><input  required></p>
-      <p type ="Status"><input type="text" ></input></p>
+      <p type ="Nickname"><input type="text" placeholder="Escriba su nickname" required></p>
       <p type ="Correo"><input type="email"></input></p>
-  
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= "margin-top: 5%;">
-          Tus Listas
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="list1.html">Lista 1</a>
-          <a class="dropdown-item" href="list2.html">Lista 2</a>
-          <a class="dropdown-item" href="list3.html">Lista 3</a>
-          <a class="dropdown-item" href="list4.html">Lista 4</a>
-        </div>
-      </div>
-      <a class="btn btn-outline-success my-2 my-sm-0" id="boton1" >Cerrar Sesión</a>
+      <p type ="Contraseña (Minimo 6 carácteres)"><input type="password" pattern=".{6,}" placeholder="Escriba su contraseña " required></input></p>
+      <p type ="Contraseña"><input type="password" placeholder="Confirme su contraseña" required></input></p>
+
+      <button id="buttonacep">Registrarme</button>
      
      </form> 
    
