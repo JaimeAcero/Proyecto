@@ -130,48 +130,43 @@
           Tipos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="series.html">Series</a>
-          <a class="dropdown-item" href="peliculas.html">Peliculas</a>
-          <a class="dropdown-item" href="cortometrajes.html">Cortometrajes</a>
+          <a class="dropdown-item" type="button" href="series.html" id="Serie">Series</a>
+          <a class="dropdown-item" type="button" href="peliculas.html" id="Peli">Peliculas</a>
+          <a class="dropdown-item" type="button" href="cortometrajes.html" id="Corto">Cortometrajes</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="listas.html">Listas</a>
-      </li>
+
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Que quieres ver?" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
-    <a href="usuario.html"><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;" ></div></a>
-                    <div><a class="btn btn-outline-success my-2 my-sm-0" id="Entrar" onclick="cambio()" >Ingresar</a></div>
-                    <div><a class="btn btn-outline-success my-2 my-sm-0"  id="Salir" onclick="cambio2()" href="index.html" hidden >Salir</a></div>
+  <div><a class="nav-link" id="Res" href="usuario.html">Registrarte</a></div>
+
+  <a href="usuario2.html" ><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg"id="userpic" style="width:25px;margin:10px;" hidden></div>
+                    <div><a class="nav-link" href="http://localhost/Proyecto/usuario1.html"id="Entrar" >Ingresar</a></div>
+                    <div><a class="nav-link" href="#"id="Salir" onclick="salir()" hidden>Salir</a></div>
     </div>
-                                 
+               
   </div>
 
 </nav>
 
-  <body  >
- 
-    <div class="glider-contain">
+  <body  onload="indexConsulta(); global()">
+
+    <div id="Slide" class="glider-contain">
         <div class="glider"style="margin-top:20px">
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
+            <a id="Item1URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item1Portada" value="" width="100" height="250"></div></a>
+			<a id="Item2URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item2Portada" value="" width="100" height="250"></div></a>
+			<a id="Item3URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item3Portada" value="" width="100" height="250"></div></a>
+			<a id="Item4URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item4Portada" value="" width="100" height="250"></div></a>
+			<a id="Item5URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item5Portada" value="" width="100" height="250"></div></a>
+			<a id="Item6URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item6Portada" value="" width="100" height="250"></div></a>
+			<a id="Item7URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item7Portada" value="" width="100" height="250"></div></a>
+			<a id="Item8URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item8Portada" value="" width="100" height="250"></div></a>
+			<a id="Item9URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item9Portada"  value="" width="100" height="250"></div></a>
+			<a id="Item10URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item10Portada" value="" width="100" height="250"></div></a>
+			<a id="Item11URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item11Portada" value="" width="100" height="250"></div></a>
+			<a id="Item12URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item12Portada" value="" width="100" height="250"></div></a>
+			<a id="Item13URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item13Portada" value="" width="100" height="250"></div></a>
+			<a id="Item14URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item14Portada" value="" width="100" height="250"></div></a>
+			<a id="Item15URL" value="" href="http://localhost/Proyecto/Item.html"><div><img alt="Test" src="" id="Item15Portada" value="" width="100" height="250"></div></a>
         </div>
         <button class="glider-prev">&laquo;</button>
         <button class="glider-next">&raquo;</button>
@@ -429,13 +424,14 @@
     </div><!-- /. wrap -->
     <div id="da">
     <video  controls >
-      <source src="videoplayback.mp4" type="video/mp4">
+      <source src="videoplayback.m4v" type="video/mp4">
     </video> 
   </div>  
   </body>
 
   
-
+  <script src="js/cliente.js"></script>
   <script src="funcion.js"></script>
   <script src="style.css"></script>
+  <script src="style2.css"></script>
 </html>

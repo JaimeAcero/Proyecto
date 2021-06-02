@@ -1,11 +1,36 @@
-function cambio(){
-document.getElementById("userpic").src= "https://www.ecestaticos.com/image/clipping/79776773aab795837282c7d4947abaf7/por-que-nos-parece-que-los-perros-sonrien-una-historia-de-30-000-anos.jpg";
-document.getElementById("Entrar").hidden = true;
-document.getElementById("Salir").hidden = false;
-}
 
-function cambio2(){
-document.getElementById("userpic").src= "https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg";
+
+function global(){
+
+if(localStorage.getItem("Menu")==0){
 document.getElementById("Entrar").hidden = false;
 document.getElementById("Salir").hidden = true;
+document.getElementById("userpic").hidden = true;
+document.getElementById("Res").hidden = false;
+	}
+	
+if(localStorage.getItem("Menu")==1){
+document.getElementById("Entrar").hidden = true;
+document.getElementById("Salir").hidden = false;
+document.getElementById("userpic").hidden = false;
+document.getElementById("Res").hidden = true;
+	}
+}
+
+function salir(){
+	 
+	window.location.href = 'http://localhost/Proyecto/index.html';
+	localStorage.setItem("Menu",0);
+	window.localStorage.removeItem('Nickname');
+window.localStorage.removeItem('Mail');
+window.localStorage.removeItem('List');
+window.localStorage.removeItem('User');
+}
+
+
+function userpage(){
+	
+	document.getElementById("UsuReg").innerHTML = localStorage.getItem("Nickname");
+	document.getElementById("CorReg").innerHTML = localStorage.getItem("Mail");
+		
 }

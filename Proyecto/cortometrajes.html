@@ -186,48 +186,43 @@ body {
           Tipos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="series.html">Series</a>
-          <a class="dropdown-item" href="peliculas.html">Peliculas</a>
-          <a class="dropdown-item" href="cortometrajes.html">Cortometrajes</a>
+          <a class="dropdown-item" type="button" href="series.html" id="Serie">Series</a>
+          <a class="dropdown-item" type="button" href="peliculas.html" id="Peli">Peliculas</a>
+          <a class="dropdown-item" type="button" href="cortometrajes.html" id="Corto">Cortometrajes</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="listas.html">Listas</a>
-      </li>
+
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Que quieres ver?" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
-    <a href="usuario.html"><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" id="userpic" style="width:25px;margin:10px;"></div></a>
-                    <div><button href="#"id="Entrar" onclick="cambio()">Ingresar</button></div>
-                    <div><button href="#"id="Salir" onclick="cambio2()" hidden>Salir</button></div>
+  <div><a class="nav-link" id="Res" href="usuario.html">Registrarte</a></div>
+
+  <a href="usuario2.html" ><div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg"id="userpic" style="width:25px;margin:10px;" hidden></div>
+                    <div><a class="nav-link" href="http://localhost/Proyecto/usuario1.html"id="Entrar" >Ingresar</a></div>
+                    <div><a class="nav-link" href="#"id="Salir" onclick="salir()" hidden>Salir</a></div>
     </div>
-                                 
+               
   </div>
 
 </nav>
 
-  <body  >
+  <body onload="global();SerieConsulta()">
   <!-- Header -->
 <div class="header">
-  <h1>TOP 10 DE CORTOMETRAJES</h1>
+  <h1>CORTOMETRAJES RECOMENDADAS</h1>
 </div>
 
 
  <div class="glider-contain">
         <div class="glider"style="margin-top:20px">
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-            <a href="item.html"><div><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg"></div></a>
-           
+            <a href="item.html" id="URLTopS1" value=""><div><img id="TopS1" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS2" value=""><div><img id="TopS2" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS3" value=""><div><img id="TopS3" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS4" value=""><div><img id="TopS4" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS5" value=""><div><img id="TopS5" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS6" value=""><div><img id="TopS6" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS7" value=""><div><img id="TopS7" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS8" value=""><div><img id="TopS8" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS9" value=""><div><img id="TopS9" alt="Test" src=""></div></a>
+			<a href="item.html" id="URLTopS10" value=""><div><img id="TopS10" alt="Test" src=""></div></a>
         </div>
         <button class="glider-prev">&laquo;</button>
         <button class="glider-next">&raquo;</button>
@@ -241,45 +236,31 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column" id="peli">
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
+    <a href="item.html" id="URLNorS1" value=""><img alt="Test" id="NorS1" src="" style="width:100%"></a><h2 id="NameNorS1">Jane Doe</h2>
+    <a href="item.html" id="URLNorS2" value=""><img alt="Test" id="NorS2" src="" style="width:100%"></a><h2 id="NameNorS2">Jane Doe</h2>
+    <a href="item.html" id="URLNorS3" value=""><img alt="Test" id="NorS3" src="" style="width:100%"></a><h2 id="NameNorS3">Jane Doe</h2>
+  
   </div>
   <div class="column" id="peli">
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-  </div>  
+    <a href="item.html" id="URLNorS4" value=""><img alt="Test" id="NorS4" src="" style="width:100%"></a><h2 id="NameNorS4">Jane Doe</h2>
+    <a href="item.html" id="URLNorS5" value=""><img alt="Test" id="NorS5" src="" style="width:100%"></a><h2 id="NameNorS5">Jane Doe</h2>
+    <a href="item.html" id="URLNorS6" value=""><img alt="Test" id="NorS6" src="" style="width:100%"></a><h2 id="NameNorS6">Jane Doe</h2>
+ 
+</div>
   <div class="column" id="peli">
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-  </div>
-  <div class="column" id="peli">
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-    <a href="item.html"><img alt="Test" src="https://elcomercio.pe/resizer/UKztl7u5dudNyWf0d-1wQsCDFg8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5LQ6WZS5R5CQ5G4JK45AO2CPHA.jpg" style="width:100%"></a><h2>Jane Doe</h2>
-  </div>
+    <a href="item.html" id="URLNorS7" value=""><img alt="Test" id="NorS7" src="" style="width:100%"></a><h2 id="NameNorS7">Jane Doe</h2>
+    <a href="item.html" id="URLNorS8" value=""><img alt="Test" id="NorS8" src="" style="width:100%"></a><h2 id="NameNorS8">Jane Doe</h2>
+    <a href="item.html" id="URLNorS9" value=""><img alt="Test" id="NorS9" src="" style="width:100%"></a><h2 id="NameNorS9">Jane Doe</h2>
+
+</div>
+
+	  <div class="column" id="peli">
+    <a href="item.html" id="URLNorS10" value=""><img alt="Test" id="NorS10" src="" style="width:100%"></a><h2 id="NameNorS10">Jane Doe</h2>
+    <a href="item.html" id="URLNorS11" value=""><img alt="Test" id="NorS11" src="" style="width:100%"></a><h2 id="NameNorS11">Jane Doe</h2>
+    <a href="item.html" id="URLNorS12" value=""><img alt="Test" id="NorS12" src="" style="width:100%"></a><h2 id="NameNorS12">Jane Doe</h2>
   
 </div>
 
-	
 
 	
    <!-- partial:index.partial.html -->
@@ -289,7 +270,7 @@ body {
   </body>
 
   
-
+<script src="js/cliente.js"></script>
   <script src="funcion.js"></script>
   <script src="style.css"></script>
 </html>
